@@ -35,6 +35,11 @@ const legoStore = {
     this.store.removeItem(this.collection, id, this.array, setId);
     },
 
+    removeCollection(id) {
+    const legoCollection = this.getLegoCollection(id);
+    this.store.removeCollection(this.collection, legoCollection);
+},
+
 
 };
 

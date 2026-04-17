@@ -15,6 +15,8 @@ router.get('/dashboard', dashboard.createView);
 router.get('/legoCollection/:id', legoCollection.createView);
 router.get('/about', about.createView);
 router.get('/legoCollection/:id/deleteset/:setid', legoCollection.deleteSet);
+router.get('/dashboard/deletecollection/:id', dashboard.deleteCollection);
+
 
 
 router.post('/legoCollection/:id/addSet', legoCollection.addSet);

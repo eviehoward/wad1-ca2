@@ -28,7 +28,15 @@ const dashboard = {
     };
     legoStore.addCollection(newCollection);
     response.redirect('/dashboard');
-},
+  },
+
+  deleteCollection(request, response) {
+    const collectionId = request.params.id;
+    logger.debug(`Deleting Playlist ${collectionId}`);
+    legoStore.removeCollection(collectionId);
+    response.redirect("/dashboard");
+  },
+
 
 };
 
