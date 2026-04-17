@@ -1,0 +1,33 @@
+<img src="{{image}}" />
+
+{{#if sets}}
+
+<p>{{sets.length}} sets total.</p>
+
+<p>This collection is worth &euro;{{thisLegoCollectionValue}}.</p>
+
+<table class="ui unstackable striped table">
+  <thead>
+    <tr>
+      <th><i class="ui clipboard list icon"></i>Code</th>
+      <th>Name</th>
+      <th><i class="ui puzzle piece icon"></i>Pieces</th>
+      <th><i class="ui piggy bank icon"></i>RRP</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each sets}}
+    <tr>
+      <td>{{code}}</td>
+      <td>{{name}}</td>
+      <td>{{pieces}}</td>
+      <td>&euro;{{price}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+{{else}}
+<h3>This collection has no sets yet.</h3>
+
+{{/if}}

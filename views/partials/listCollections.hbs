@@ -1,0 +1,26 @@
+<hr />
+
+<section class="ui left aligned middle aligned segment">
+    <h2>Lego Collections</h2>
+
+    {{#unless legoCollections}}
+    <h3 class="ui message">There are no lego collections yet.</h3>
+    {{/unless}} {{#each legoCollections}}
+    <section class="ui left aligned middle aligned segment">
+        <h3 class="ui header">{{id}}: Lego {{title}}</h3>
+        <img src="{{image}}" alt="{{title}} logo" class="ui right floated small image" />
+
+        {{#if sets}}
+        <p>Sets: {{sets.length}}</p>
+        {{else}}
+        <p>Empty collection!</p>
+        {{/if}}
+
+        <a href="/legoCollection/{{id}}"> <i class="ui circular hand point right outline icon"></i> </a>
+        <div class="ui clearing hidden divider"></div>
+    </section>
+
+    {{/each}}
+</section>
+
+<div class="break"></div>

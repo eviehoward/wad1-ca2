@@ -1,0 +1,28 @@
+<form class="ui stacked segment form" action="/legoCollection/{{id}}/addSet" method="POST">
+  <div class="two fields">
+    <div class="field">
+      <label>Name</label>
+      <input type="text" name="name" autofocus required title = "Please include a valid Title"
+	  placeholder="Name">
+    </div>
+    <div class="field">
+      <label>Code</label>
+      <input type="text" name="code" autofocus required title = "Please include a valid Code"
+	  placeholder="12345">
+    </div>
+  </div>
+
+  <div class="two fields">
+    <div class="field">
+      <label>Pieces</label>
+      <input type="number" name="pieces" autofocus required title = "Please include a valid number"
+	  placeholder="0">
+    </div>
+    <div class="field">
+      <label>Price</label>
+      <input type="text" name="price" autofocus required title = "Please include a valid price"
+	  placeholder="0.00">
+    </div>
+  </div>
+  <button class="ui blue submit button">Add Set</button>
+</form>

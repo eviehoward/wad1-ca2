@@ -1,0 +1,156 @@
+{
+  "legoCollections": [
+    {
+      "id": "01",
+      "title": "Icons",
+      "sets": [
+        {
+          "id": 1,
+          "code": "10351",
+          "name": "Sherlock Holmes: Book Nook",
+          "pieces": "1359",
+          "price": 119.99
+        },
+        {
+          "id": 2,
+          "code": "10359",
+          "name": "Fountain Garden",
+          "pieces": "1302",
+          "price": 99.99
+        }
+      ],
+      "image": "/icons.png"
+    },
+    {
+      "id": "02",
+      "title": "Creator 3in1",
+      "sets": [
+        {
+          "id": 3,
+          "code": "31377",
+          "name": "Turtle with a Water Lily Flower",
+          "pieces": "124",
+          "price": 9.99
+        },
+        {
+          "id": 4,
+          "code": "31120",
+          "name": "Medieval Castle",
+          "pieces": "1426",
+          "price": 99.99
+        },
+        {
+          "id": 5,
+          "code": "31141",
+          "name": "Main Street",
+          "pieces": "1459",
+          "price": 139.99
+        },
+        {
+          "id": 6,
+          "code": "31050",
+          "name": "Corner Deli",
+          "pieces": "467",
+          "price": 34.99
+        },
+        {
+          "id": 7,
+          "code": "31131",
+          "name": "Downtown Noodle Shop",
+          "pieces": "569",
+          "price": 44.99
+        },
+        {
+          "id": 8,
+          "code": "31143",
+          "name": "Birdhouse",
+          "pieces": "476",
+          "price": 29.99
+        },
+        {
+          "id": 9,
+          "code": "31144",
+          "name": "Exotic Pink Parrot",
+          "pieces": "253",
+          "price": 24.99
+        },
+        {
+          "id": 10,
+          "code": "31149",
+          "name": "Flowers in Watering Can",
+          "pieces": "420",
+          "price": 29.99
+        }
+      ],
+      "image": "/3in1.png"
+    },
+    {
+      "id": "03",
+      "title": "Animal Crossing",
+      "sets": [
+        {
+          "id": 11,
+          "code": "77048",
+          "name": "Kapp'n's Island Boat Tour",
+          "pieces": "233",
+          "price": 29.99
+        },
+        {
+          "id": 12,
+          "code": "77049",
+          "name": "Isabelle's House Visit",
+          "pieces": "389",
+          "price": 39.99
+        }
+      ],
+      "image": "/animalcrossing.png"
+    },
+    {
+      "id": "04",
+      "title": "City",
+      "sets": [],
+      "image": "/city.png"
+    },
+    {
+      "id": "05",
+      "title": "Wishlist",
+      "sets": [
+        {
+          "id": 13,
+          "code": "71741",
+          "name": "City Gardens",
+          "pieces": "5686",
+          "price": 249.99
+        },
+        {
+          "id": 14,
+          "code": "31220",
+          "name": "Bridge over a Pond of Water Lilies",
+          "pieces": "3179",
+          "price": 199.99
+        },
+        {
+          "id": 15,
+          "code": "40921",
+          "name": "Up-Scaled Blue Astronaut Minifigure",
+          "pieces": "793",
+          "price": 59.99
+        },
+        {
+          "id": "116329b4-7868-41e4-8d30-45b2912b064a",
+          "name": "Up-Scaled Minifigure",
+          "code": "40649",
+          "pieces": "654",
+          "price": "59.99"
+        }
+      ],
+      "image": "/bwlogo.png"
+    },
+    {
+      "id": "63c04adb-9af6-4c40-9430-944270e31198",
+      "title": "Gift Ideas",
+      "sets": [],
+      "image": ""
+    }
+  ]
+}

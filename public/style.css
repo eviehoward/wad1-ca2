@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: lightgrey;
+  background-image: url(background.webp);
+  background-size: cover;
+}
+
+.menu, a {
+  color: black;
+  font-family: "Barriecito", system-ui;
+  font-size: 1.4em;
+}
+
+.header > a {
+  font-family: "Barriecito", system-ui;
+  font-size: 2em;
+}
+
+a:hover {
+  color: rgb(74, 0, 0);
+}
+
+.break, hr {
+  margin-bottom: 70px;
+}
+
+h4, h3, h2 {
+  font-family: "Barriecito", system-ui;
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+}
+
+footer a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+}
+
+.collections {
+  min-height: 27em;
+}
+
+main {
+  min-height: 85vh;
+  padding-bottom: 1vh;
+}
+
+.ui.centered.image {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

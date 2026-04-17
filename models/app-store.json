@@ -1,0 +1,17 @@
+{
+  "info": {
+    "appTitle": "Lego Collection App",
+    "version": 1.0,
+    "creators": [
+      {
+        "name": "Evie Howard",
+        "role": "Student"
+      },
+      {
+        "name": "Lego Legoson",
+        "role": "CEO"
+      }
+    ],
+    "location": "Legoland"
+  } 
+}

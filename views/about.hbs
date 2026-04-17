@@ -1,0 +1,88 @@
+<hr />
+
+<section class="ui left aligned middle aligned segment">
+  <h2>About the App</h2>
+  <div class="ui stackable grid container">
+    <div class="ten wide column">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4493.201917953146!2d9.109050870954471!3d55.73068665750778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b7178cc61342b%3A0xe381471b9e657703!2sLEGO%20House!5e0!3m2!1sen!2sie!4v1772738403092!5m2!1sen!2sie"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="six wide column">
+      <h3>Contact Us</h3>
+      <p>Mr. Lego Legoson, Lego Collection App CEO</p>
+      <p><i class="ui phone icon"></i>087-LEGO-1234</p>
+      <p><i class="ui home icon"></i>1 Lego Lane, Lego Street, Y35 LEGO</p>
+      <hr />
+      <h3>App</h3>
+      <ul class="ui list">
+        <li>This is Lego Collection App Version 1.0.</li>
+        <li>Made For Web App Development 1.</li>
+        <li>LEGO logo and branding &copy; LEGO Group, 2026</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="ui left aligned middle aligned segment">
+  <div class="ui five small blue statistics" style="margin-top: 1em">
+    {{#with info}}
+
+    <div class="statistic">
+      <div class="value">
+        <i class="music icon"></i>
+      </div>
+      <div class="label">
+        App Title: <br />
+        {{appTitle}}
+      </div>
+    </div>
+
+    <div class="statistic">
+      <div class="value">
+        <i class="code branch icon"></i>
+      </div>
+      <div class="label">
+        App Version: <br />
+        Version {{version}}
+      </div>
+    </div>
+
+    <div class="statistic">
+      <div class="value">
+        <i class="map pin icon"></i>
+      </div>
+      <div class="label">
+        Made in: <br />
+        {{location}}
+      </div>
+    </div>
+
+    <div class="statistic">
+      <div class="value">
+        <i class="user icon"></i>
+      </div>
+      <div class="label">
+        Created by: <br />
+        {{creators.0.name}}
+      </div>
+    </div>
+
+    <div class="statistic">
+      <div class="value">
+        <i class="user plus icon"></i>
+      </div>
+      <div class="label">
+        With help from: <br />
+        {{creators.1.name}}
+      </div>
+    </div>
+
+    {{/with}}
+  </div>
+</section>
+<div class="break"></div>
