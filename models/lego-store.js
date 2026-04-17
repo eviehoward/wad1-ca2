@@ -31,6 +31,10 @@ const legoStore = {
     this.store.addCollection(this.collection, legoCollection);
     },
 
+    removeSet(id, setId) {
+    this.store.removeItem(this.collection, id, this.array, setId);
+    },
+
 
 };
 

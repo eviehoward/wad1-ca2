@@ -33,6 +33,15 @@ const legoCollection = {
     response.redirect('/legoCollection/' + legoCollectionId);
   },
 
+  deleteSet(request, response) {
+    const legoCollectionId = request.params.id;
+    const setId = request.params.setid;
+    logger.debug(`Deleting Set  $(setId} from Collection ${legoCollectionId}`);
+    legoStore.removeSet(legoCollectionId, setId);
+    response.redirect('/legoCollection/' + legoCollectionId);
+  },
+
+
 };
 
 export default legoCollection;

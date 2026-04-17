@@ -13,6 +13,7 @@
       <th>Name</th>
       <th><i class="ui puzzle piece icon"></i>Pieces</th>
       <th><i class="ui piggy bank icon"></i>RRP</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -22,6 +23,12 @@
       <td>{{name}}</td>
       <td>{{pieces}}</td>
       <td>&euro;{{price}}</td>
+      <td class="center aligned">
+        <a href="/legoCollection/{{../id}}/deleteset/{{id}}" 
+	        title="Delete set">
+            <i class="ui black trash icon"></i>
+        </a>
+      </td>
     </tr>
     {{/each}}
   </tbody>
