@@ -14,7 +14,41 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false, }));
 
 
-const handlebars = create({extname: '.hbs'});
+const handlebars = create({
+    extname: '.hbs', 
+    helpers: {
+    upperCase: (inputString) => {
+      return inputString.toUpperCase();
+    },
+
+    formatDate: (date) => {
+      let dateCreated = new Date(date);
+      let options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "2-digit"
+      };
+      return `${dateCreated.toLocaleDateString("en-IE", options)}`;
+    },
+
+    properCase: (str) => {
+        const splitted = str.split(" ");
+        const output = [];
+
+        splitted.map((word) => {
+            output.push(word[0].toUpperCase() + word.slice(1).toLowerCase());
+        });
+
+        return output.join(" ");
+    },
+
+    countNormal: (index) => {
+      return index += 1;
+    }
+    }
+});
+
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs");
 

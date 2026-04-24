@@ -20,9 +20,12 @@ const dashboard = {
   },
 
   addCollection(request, response) {
+    const timestamp = new Date();
+
     const newCollection = {
       id: uuidv4(),
       title: request.body.title,
+      date: timestamp,
       sets: [],
       image: ""
     };

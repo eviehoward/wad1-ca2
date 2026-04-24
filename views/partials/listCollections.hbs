@@ -7,13 +7,17 @@
     <h3 class="ui message">There are no lego collections yet.</h3>
     {{/unless}} {{#each legoCollections}}
     <section class="ui left aligned middle aligned segment">
-        <h3 class="ui header">{{id}}: Lego {{title}}</h3>
-        <img src="{{image}}" alt="{{title}} logo" class="ui right floated small image" />
+        <h3 class="ui header">{{countNormal @index}}: Lego {{properCase title}}</h3>
+        <img src="{{image}}" alt="{{properCase title}} logo" class="ui right floated small image" />
 
         {{#if sets}}
-        <p>Sets: {{sets.length}}</p>
+        <p><i class="ui smile icon"></i>Sets: {{sets.length}}</p>
         {{else}}
-        <p>Empty collection!</p>
+        <p><i class="ui dizzy icon"></i>Empty collection!</p>
+        {{/if}}
+
+        {{#if date}}
+        <p><i class="ui calendar alternate icon"></i>Created on: {{formatDate date}}</p>
         {{/if}}
 
         <a href="/legoCollection/{{id}}"> <i class="ui circular hand point right outline icon"></i> </a>

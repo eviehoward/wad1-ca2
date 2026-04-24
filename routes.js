@@ -9,6 +9,8 @@ import start from './controllers/start.js';
 import dashboard from './controllers/dashboard.js';
 import legoCollection from './controllers/legoCollection.js';
 import about from './controllers/about.js';
+import stats from './controllers/stats.js';
+
 
 router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);
@@ -16,6 +18,8 @@ router.get('/legoCollection/:id', legoCollection.createView);
 router.get('/about', about.createView);
 router.get('/legoCollection/:id/deleteset/:setid', legoCollection.deleteSet);
 router.get('/dashboard/deletecollection/:id', dashboard.deleteCollection);
+router.get('/stats', stats.createView);
+
 
 
 
