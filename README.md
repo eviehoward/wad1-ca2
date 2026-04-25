@@ -1,4 +1,4 @@
-# Assignment 1 Lego Collection App
+# Assignment 2 Lego Collection App
 
 This App is used to record and display Lego collections.
 
@@ -16,3 +16,4 @@ For each set, the following data is recorded:
 - number of pieces,
 - RRP (in euro).
 
+25/04/26 - Added user store, login/signup functionality, updated menu, added user stats to stats.hbs

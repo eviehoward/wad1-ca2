@@ -3,17 +3,21 @@
 import logger from '../utils/logger.js';
 import legoStore from '../models/lego-store.js';
 import { v4 as uuidv4 } from 'uuid';
+import accounts from './accounts.js';
+
 
 
 const legoCollection = {
   createView(request, response) {
     const legoCollectionId = request.params.id;
+    const loggedInUser = accounts.getCurrentUser(request);
     logger.debug(`Lego Collection id = ${legoCollectionId}`);
     
     const viewData = {
       title: 'Lego Collection', //top of tab
       thisLegoCollection: legoStore.getLegoCollection(legoCollectionId), //finds this specific lego collection and stores it
-      thisLegoCollectionValue: legoStore.getLegoPrice(legoCollectionId) //adds up all the costs of each set in this lego collection
+      thisLegoCollectionValue: legoStore.getLegoPrice(legoCollectionId), //adds up all the costs of each set in this lego collection
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
     };
 
     response.render('legoCollection', viewData);

@@ -38,9 +38,21 @@ const legoStore = {
     removeCollection(id) {
     const legoCollection = this.getLegoCollection(id);
     this.store.removeCollection(this.collection, legoCollection);
+    },
+
+    getUserCollections(userid) {
+  return this.store.findBy(this.collection, (legoCollection => legoCollection.userid === userid));
 },
 
+searchUserCollections(search, userid) {
+  return this.store.findBy(
+    this.collection,
+    (legoCollection => legoCollection.userid === userid && legoCollection.title.toLowerCase().includes(search.toLowerCase())))
+}, 
 
 };
+
+
+
 
 export default legoStore;
