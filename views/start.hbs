@@ -12,4 +12,38 @@
   <img src="/bennyspace.jpg" class="ui centered image" />
 </section>
 
+<section class="ui center aligned middle aligned segment">
+  <h3>App Stats!</h3>
+  {{#with stats}}
+  <div class="ui centered three statistics">
+          <div class="ui statistic">
+            <div class="value">
+              <i class="microphone icon"></i> 
+            </div>
+            <div class="label">
+              {{displayNumCollections}} collections
+            </div>
+          </div>
+
+          <div class="ui red statistic">
+            <div class="value">
+              <i class="music icon"></i> 
+            </div>
+            <div class="label">
+              {{displayNumSets}} sets
+            </div>
+          </div> 
+		  
+          <div class="ui purple statistic">
+          <div class="value">
+            <i class="plus icon"></i>
+          </div>
+          <div class="label">
+            {{displayTotalUsers}} users
+          </div>
+        </div>
+    </div>  
+    {{/with}}  
+</section>
+
 <div class="break"></div>

@@ -17,4 +17,4 @@ For each set, the following data is recorded:
 - RRP (in euro).
 
 25/04/26 - Added user store, login/signup functionality, updated menu, added user stats to stats.hbs
-29/04/26 - Added update set functionality, listOneSet and editSet partials, added sort by title and collection size
+29/04/26 - Added update set functionality, listOneSet and editSet partials, added sort by title and collection size, search, stats on homepage
