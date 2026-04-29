@@ -31,6 +31,10 @@ const dashboard = {
             return a.title.localeCompare(b.title) * order;
           };
 
+          if (sortField === "size") {
+            return (a.sets.length - b.sets.length) * order;
+          }
+
           return 0
         });
       };
@@ -41,6 +45,7 @@ const dashboard = {
         legoCollections: sortField ? sorted : collections,
         search: searchTerm,
         titleSelected: request.query.sort === "title",
+        sizeSelected: request.query.sort === "size",
         ascSelected: request.query.order === "asc",
         descSelected: request.query.order === "desc",
       };

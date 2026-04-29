@@ -29,7 +29,8 @@ router.post('/legoCollection/:id/addSet', legoCollection.addSet);
 router.post('/dashboard/addCollection', dashboard.addCollection);
 router.post('/legoCollection/:id/updateSet/:setId', legoCollection.updateSet);
 
-
+router.get('/searchCategory', dashboard.createView);
+router.get('/sortData', dashboard.createView);
 
 router.get('/', accounts.index);
 router.get('/login', accounts.login);

@@ -74,3 +74,11 @@ main {
 .hide{
     display: none;
 }
+
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
