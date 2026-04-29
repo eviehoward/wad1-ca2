@@ -45,6 +45,22 @@ const legoCollection = {
     response.redirect('/legoCollection/' + legoCollectionId);
   },
 
+  updateSet(request, response) {
+    const collectionId = request.params.id;
+    const setId = request.params.setId;
+    logger.debug("updating set " + setId);
+    const updatedSet = {
+      id: setId,
+      name: request.body.name,
+      code: request.body.code,
+      pieces: request.body.pieces,
+      price: request.body.price,
+    };
+    legoStore.editSet(collectionId, setId, updatedSet);
+    response.redirect('/legoCollection/' + collectionId);
+
+  }
+
 
 };
 

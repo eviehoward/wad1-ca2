@@ -40,15 +40,19 @@ const legoStore = {
     this.store.removeCollection(this.collection, legoCollection);
     },
 
-    getUserCollections(userid) {
-  return this.store.findBy(this.collection, (legoCollection => legoCollection.userid === userid));
-},
+    editSet(id, setId, updatedSet) {
+        this.store.editItem(this.collection, id, setId, this.array, updatedSet);
+    },
 
-searchUserCollections(search, userid) {
-  return this.store.findBy(
-    this.collection,
+    getUserCollections(userid) {
+    return this.store.findBy(this.collection, (legoCollection => legoCollection.userid === userid));
+    },
+
+    searchUserCollections(search, userid) {
+        return this.store.findBy(
+        this.collection,
     (legoCollection => legoCollection.userid === userid && legoCollection.title.toLowerCase().includes(search.toLowerCase())))
-}, 
+    }, 
 
 };
 

@@ -27,6 +27,7 @@ router.get('/stats', stats.createView);
 
 router.post('/legoCollection/:id/addSet', legoCollection.addSet);
 router.post('/dashboard/addCollection', dashboard.addCollection);
+router.post('/legoCollection/:id/updateSet/:setId', legoCollection.updateSet);
 
 
 

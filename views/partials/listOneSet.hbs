@@ -1,0 +1,18 @@
+
+<tr id="set{{@index}}">
+    <td>{{code}}</td>
+        <td>{{properCase name}}</td>
+        <td>{{pieces}}</td>
+        <td>&euro;{{price}}</td>
+        <td class="center aligned">
+            <button title="Edit set" class = "editSubmit" id="showEdit{{@index}}">
+            <i class="ui pencil icon"></i>
+            </button>
+        </td>
+        <td class="center aligned">
+            <a href="/legoCollection/{{collectionId}}/deleteset/{{id}}" 
+              title="Delete set">
+                <i class="ui black trash icon"></i>
+            </a>
+        </td>
+</tr>
