@@ -30,6 +30,7 @@ const start = {
         title: "CA1 Starter App", //top of tab
         info: appStore.getAppInfo(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: loggedInUser.picture,
         stats: statistics
       };
     

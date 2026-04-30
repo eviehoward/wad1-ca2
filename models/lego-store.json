@@ -1,206 +1,58 @@
 {
   "legoCollections": [
     {
-      "id": "01",
-      "title": "Icons",
-      "sets": [
-        {
-          "id": 1,
-          "code": "10351",
-          "name": "Sherlock Holmes: Book Nook",
-          "pieces": "1359",
-          "price": 119.99
-        },
-        {
-          "id": 2,
-          "code": "10359",
-          "name": "Fountain Garden",
-          "pieces": "1302",
-          "price": 99.99
-        }
-      ],
-      "image": "/icons.png"
-    },
-    {
-      "id": "02",
-      "title": "Creator 3in1",
-      "sets": [
-        {
-          "id": 3,
-          "code": "31377",
-          "name": "Turtle with a Water Lily Flower",
-          "pieces": "124",
-          "price": 9.99
-        },
-        {
-          "id": 4,
-          "code": "31120",
-          "name": "Medieval Castle",
-          "pieces": "1426",
-          "price": 99.99
-        },
-        {
-          "id": 5,
-          "code": "31141",
-          "name": "Main Street",
-          "pieces": "1459",
-          "price": 139.99
-        },
-        {
-          "id": 6,
-          "code": "31050",
-          "name": "Corner Deli",
-          "pieces": "467",
-          "price": 34.99
-        },
-        {
-          "id": 7,
-          "code": "31131",
-          "name": "Downtown Noodle Shop",
-          "pieces": "569",
-          "price": 44.99
-        },
-        {
-          "id": 8,
-          "code": "31143",
-          "name": "Birdhouse",
-          "pieces": "476",
-          "price": 29.99
-        },
-        {
-          "id": 9,
-          "code": "31144",
-          "name": "Exotic Pink Parrot",
-          "pieces": "253",
-          "price": 24.99
-        },
-        {
-          "id": 10,
-          "code": "31149",
-          "name": "Flowers in Watering Can",
-          "pieces": "420",
-          "price": 29.99
-        }
-      ],
-      "image": "/3in1.png"
-    },
-    {
-      "id": "03",
-      "title": "Animal Crossing",
-      "sets": [
-        {
-          "id": 11,
-          "code": "77048",
-          "name": "Kapp'n's Island Boat Tour",
-          "pieces": "233",
-          "price": 29.99
-        },
-        {
-          "id": 12,
-          "code": "77049",
-          "name": "Isabelle's House Visit",
-          "pieces": "389",
-          "price": 39.99
-        }
-      ],
-      "image": "/animalcrossing.png"
-    },
-    {
-      "id": "04",
-      "title": "City",
-      "sets": [],
-      "image": "/city.png"
-    },
-    {
-      "id": "05",
-      "title": "Wishlist",
-      "sets": [
-        {
-          "id": 13,
-          "code": "71741",
-          "name": "City Gardens",
-          "pieces": "5686",
-          "price": 249.99
-        },
-        {
-          "id": 14,
-          "code": "31220",
-          "name": "Bridge over a Pond of Water Lilies",
-          "pieces": "3179",
-          "price": 199.99
-        },
-        {
-          "id": 15,
-          "code": "40921",
-          "name": "Up-Scaled Blue Astronaut Minifigure",
-          "pieces": "793",
-          "price": 59.99
-        }
-      ],
-      "image": "/bwlogo.png"
-    },
-    {
-      "id": "b9a8bdbe-e932-43b3-a4aa-0592a7c64762",
-      "title": "legooz",
-      "date": "2026-04-24T16:40:02.181Z",
-      "sets": [],
-      "image": ""
-    },
-    {
-      "id": "cfb56082-da09-46a6-9aa7-11197753b895",
-      "title": "Lego Test Caps CAPS test cAps",
-      "date": "2026-04-24T16:58:14.331Z",
-      "sets": [],
-      "image": ""
-    },
-    {
-      "userid": "28a40eff-2402-4a64-9bef-dfbae7b51106",
-      "id": "53cbc16a-433d-4e1c-8898-a2bcde8bda80",
-      "title": "Lego Ideas",
-      "date": "2026-04-25T17:53:10.078Z",
-      "sets": [
-        {
-          "id": "1f5f9629-5547-4780-858b-3bf2869a3156",
-          "name": "Fountain Garden",
-          "code": "12355",
-          "pieces": "123",
-          "price": "12"
-        }
-      ],
-      "image": ""
-    },
-    {
-      "userid": "28a40eff-2402-4a64-9bef-dfbae7b51106",
-      "id": "5fd12670-c322-4180-9b4b-1c6b423a1f74",
-      "title": "test",
-      "date": "2026-04-29T18:24:42.932Z",
-      "sets": [
-        {
-          "id": "7e1fe644-64cb-479c-a7be-99ed22953789",
-          "name": "test",
-          "code": "11111",
-          "pieces": "1",
-          "price": "1"
-        },
-        {
-          "id": "dfa5d464-b8f5-40fe-9eae-865b63a16628",
-          "name": "test2",
-          "code": "22222",
-          "pieces": "22",
-          "price": "2"
-        }
-      ],
-      "image": ""
-    },
-    {
-      "userid": "28a40eff-2402-4a64-9bef-dfbae7b51106",
-      "id": "a31cf636-ad6d-468f-913f-9bbe0b5f8923",
-      "title": "ideas",
-      "date": "2026-04-30T19:19:03.092Z",
+      "userid": "1082b8d0-c37c-4e6b-bbcc-494d1c0b3200",
+      "id": "60553d3d-ec2a-4ef4-83b2-984915e69d57",
+      "title": "Ideas",
+      "date": "2026-04-30T20:25:59.922Z",
       "sets": [],
       "image": {
-        "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777576745/blhr78b4c9jzuhdgsyjf.png",
-        "public_id": "blhr78b4c9jzuhdgsyjf"
+        "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580759/yjsdjwpwkxtmpv1utfy1.png",
+        "public_id": "yjsdjwpwkxtmpv1utfy1"
+      }
+    },
+    {
+      "userid": "1082b8d0-c37c-4e6b-bbcc-494d1c0b3200",
+      "id": "db508fbf-6139-474f-8fa3-789465f953c8",
+      "title": "City",
+      "date": "2026-04-30T20:26:13.219Z",
+      "sets": [],
+      "image": {
+        "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580773/uugipdgemzirk5gbo6wy.png",
+        "public_id": "uugipdgemzirk5gbo6wy"
+      }
+    },
+    {
+      "userid": "1082b8d0-c37c-4e6b-bbcc-494d1c0b3200",
+      "id": "0852ba65-dd08-4b13-9fc0-080f35bfbd15",
+      "title": "Icons",
+      "date": "2026-04-30T20:26:28.022Z",
+      "sets": [],
+      "image": {
+        "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580787/bykfflflf41iokp80ber.png",
+        "public_id": "bykfflflf41iokp80ber"
+      }
+    },
+    {
+      "userid": "1bc00e83-2c62-41de-973b-c9874ec10034",
+      "id": "56ad9043-8fe0-4739-bead-682cddb2c19a",
+      "title": "Animal Crossing",
+      "date": "2026-04-30T20:27:18.237Z",
+      "sets": [],
+      "image": {
+        "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580838/fdydvg3frf7bruqnhw5m.png",
+        "public_id": "fdydvg3frf7bruqnhw5m"
+      }
+    },
+    {
+      "userid": "1bc00e83-2c62-41de-973b-c9874ec10034",
+      "id": "04b6c8b6-a9b5-438b-a982-0bf5af54a6b8",
+      "title": "creator 3 in 1",
+      "date": "2026-04-30T20:27:34.323Z",
+      "sets": [],
+      "image": {
+        "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580854/u50crs36ltqqlybjvutu.png",
+        "public_id": "u50crs36ltqqlybjvutu"
       }
     }
   ]

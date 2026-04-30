@@ -1,25 +1,37 @@
 {
   "users": [
     {
-      "firstName": "homer",
-      "lastName": "simpson",
+      "firstName": "Homer",
+      "lastName": "Simpson",
       "email": "homer@simpson.com",
-      "password": "secret",
-      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+      "password": "Secret1",
+      "id": "1bc00e83-2c62-41de-973b-c9874ec10034",
+      "picture": {
+        "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777578779/pdlucejfnyo0yi9aeeat.jpg",
+        "public_id": "pdlucejfnyo0yi9aeeat"
+      }
     },
     {
-      "firstName": "marge",
+      "firstName": "Marge",
       "lastName": "simpson",
       "email": "marge@simpson.com",
-      "password": "secret",
-      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+      "password": "Secret1",
+      "id": "1082b8d0-c37c-4e6b-bbcc-494d1c0b3200",
+      "picture": {
+        "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580694/yjy2qx3kfukna2ue5xkx.jpg",
+        "public_id": "yjy2qx3kfukna2ue5xkx"
+      }
     },
     {
-      "firstName": "Evie",
-      "lastName": "H",
+      "firstName": "evie",
+      "lastName": "h",
       "email": "evie@test.com",
-      "password": "secret",
-      "id": "28a40eff-2402-4a64-9bef-dfbae7b51106"
+      "password": "Secret1",
+      "id": "6e9b0570-8bdb-4084-9edd-758914203c71",
+      "picture": {
+        "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777581152/oevfvci3ir3pmlhwfciv.jpg",
+        "public_id": "oevfvci3ir3pmlhwfciv"
+      }
     }
   ]
 }

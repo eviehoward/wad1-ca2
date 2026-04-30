@@ -14,6 +14,7 @@ const about = {
       const viewData = {
         title: "About the playlist app", //top of tab
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: loggedInUser.picture,
         info: appStore.getAppInfo() //retrieve info from appstore
       };
       response.render('about', viewData);

@@ -17,7 +17,8 @@ const legoCollection = {
       title: 'Lego Collection', //top of tab
       thisLegoCollection: legoStore.getLegoCollection(legoCollectionId), //finds this specific lego collection and stores it
       thisLegoCollectionValue: legoStore.getLegoPrice(legoCollectionId), //adds up all the costs of each set in this lego collection
-      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture,
     };
 
     response.render('legoCollection', viewData);
