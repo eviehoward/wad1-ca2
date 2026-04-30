@@ -55,15 +55,6 @@ const dashboard = {
       response.render('dashboard', viewData);
     } 
     else response.redirect('/');
-    
-    // const viewData = {
-    //   title: "Lego Collection Dashboard",
-    //   legoCollections: legoStore.getAllLego() //retrieve all the collections in JSON file
-    // };
-
-    //logger.debug(viewData.legoCollections);
-    
-    // response.render('dashboard', viewData);
   },
 
   addCollection(request, response) {
@@ -79,15 +70,19 @@ const dashboard = {
       sets: [],
       image: ""
     };
-    legoStore.addCollection(newCollection);
-    response.redirect('/dashboard');
+
+    legoStore.addCollection(newCollection, request.files.image, function() {
+      response.redirect("/dashboard");
+    });
   },
 
   deleteCollection(request, response) {
     const collectionId = request.params.id;
     logger.debug(`Deleting Playlist ${collectionId}`);
-    legoStore.removeCollection(collectionId);
-    response.redirect("/dashboard");
+
+    legoStore.removeCollection(collectionId, function() {
+      response.redirect("/dashboard");
+    })
   },
 
 

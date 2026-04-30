@@ -38,7 +38,7 @@
     {{#each legoCollections}}
     <section class="ui left aligned middle aligned segment">
         <h3 class="ui header">{{countNormal @index}}: Lego {{properCase title}}</h3>
-        <img src="{{image}}" alt="{{properCase title}} logo" class="ui right floated small image" />
+        <img src="{{image.url}}" alt="{{properCase title}} logo" class="ui right floated medium image" />
 
         {{#if sets}}
         <p><i class="ui smile icon"></i>Sets: {{sets.length}}</p>

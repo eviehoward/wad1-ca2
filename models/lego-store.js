@@ -27,17 +27,36 @@ const legoStore = {
         this.store.addItem(this.collection, id, this.array, set);
     },
 
-    addCollection(legoCollection) {
-    this.store.addCollection(this.collection, legoCollection);
+    async addCollection(legoCollection, file, response) {
+        try {
+            legoCollection.image = await this.store.addToCloudinary(file);
+            this.store.addCollection(this.collection, legoCollection);
+            response();
+        } catch (error) {
+            logger.error("Error processing playlist:", error);
+            response(error);
+        }
+    //this.store.addCollection(this.collection, legoCollection);
     },
 
     removeSet(id, setId) {
     this.store.removeItem(this.collection, id, this.array, setId);
     },
 
-    removeCollection(id) {
+    async removeCollection(id, response) {
     const legoCollection = this.getLegoCollection(id);
+
+    if (legoCollection.image && legoCollection.image.public_id) {
+        try {
+            await this.store.deleteFromCloudinary(legoCollection.image.public_id);
+            logger.info("Cloudinary image deleted");
+        } catch (err) {
+            logger.error("Failed to delete Cloudinary image:", err);
+        }
+    }
+
     this.store.removeCollection(this.collection, legoCollection);
+    response();
     },
 
     editSet(id, setId, updatedSet) {
