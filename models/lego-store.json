@@ -38,7 +38,30 @@
       "id": "56ad9043-8fe0-4739-bead-682cddb2c19a",
       "title": "Animal Crossing",
       "date": "2026-04-30T20:27:18.237Z",
-      "sets": [],
+      "sets": [
+        {
+          "id": "0e9a3141-ed50-4526-8a08-70b3ee324089",
+          "name": "stargazing with celeste",
+          "code": "77053",
+          "pieces": "78",
+          "price": "9.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777658431/p5k2qgmoa3nbmfoeojpk.png",
+            "public_id": "p5k2qgmoa3nbmfoeojpk"
+          }
+        },
+        {
+          "id": "d875b90f-8a35-4ea7-bced-df58399c3b59",
+          "name": "able sisters Clothing shop",
+          "code": "77055",
+          "pieces": "322",
+          "price": "39.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777658486/bibhyedrlle74wxyi0j9.png",
+            "public_id": "bibhyedrlle74wxyi0j9"
+          }
+        }
+      ],
       "image": {
         "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580838/fdydvg3frf7bruqnhw5m.png",
         "public_id": "fdydvg3frf7bruqnhw5m"
@@ -49,7 +72,52 @@
       "id": "04b6c8b6-a9b5-438b-a982-0bf5af54a6b8",
       "title": "creator 3 in 1",
       "date": "2026-04-30T20:27:34.323Z",
-      "sets": [],
+      "sets": [
+        {
+          "id": "5eea30d9-27d9-41f9-b1f3-27ecbccd7f22",
+          "name": "Cute Hamster with a Flower",
+          "code": "31376",
+          "pieces": "166",
+          "price": "9.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777657630/xmfnzqe80m8cpdsexmng.png",
+            "public_id": "xmfnzqe80m8cpdsexmng"
+          }
+        },
+        {
+          "id": "0db48ad6-7628-486f-a23b-cba946783a61",
+          "name": "Medieval Horse knight castle",
+          "code": "31168",
+          "pieces": "1371",
+          "price": "119.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777658159/en0jabzfxwhvrgxxbbqt.png",
+            "public_id": "en0jabzfxwhvrgxxbbqt"
+          }
+        },
+        {
+          "id": "f42feeba-be00-4c01-a0a3-3dec3742d810",
+          "name": "retro CAMERA",
+          "code": "31147",
+          "pieces": "261",
+          "price": "19.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777658300/cr9rjf1vxaartuheaz65.png",
+            "public_id": "cr9rjf1vxaartuheaz65"
+          }
+        },
+        {
+          "id": "7726097f-cb79-4272-9273-29a072c73a91",
+          "name": "turtle with a water lily flower",
+          "code": "31377",
+          "pieces": "124",
+          "price": "9.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777658355/yftxomhijp0jqtxhdi3w.png",
+            "public_id": "yftxomhijp0jqtxhdi3w"
+          }
+        }
+      ],
       "image": {
         "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580854/u50crs36ltqqlybjvutu.png",
         "public_id": "u50crs36ltqqlybjvutu"

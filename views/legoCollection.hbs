@@ -4,7 +4,8 @@
 {{#with thisLegoCollection}}
 
 <section class="ui center aligned middle aligned segment collections">
-  <h2>{{title}}</h2>
+  <h2>{{properCase title}}</h2>
+  <p>This collection is worth &euro;{{../thisLegoCollectionValue}}.</p>
   {{> listSets}}
 </section>
 

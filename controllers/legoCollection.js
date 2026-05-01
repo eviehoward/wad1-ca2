@@ -34,8 +34,10 @@ const legoCollection = {
       pieces: request.body.pieces,
       price: request.body.price
     };
-    legoStore.addSet(legoCollectionId, newSet);
-    response.redirect('/legoCollection/' + legoCollectionId);
+
+    legoStore.addSet(legoCollectionId, newSet, request.files.picture, function() {
+      response.redirect('/legoCollection/' + legoCollectionId);
+    });
   },
 
   deleteSet(request, response) {

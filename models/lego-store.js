@@ -19,12 +19,21 @@ const legoStore = {
     getLegoPrice(id) {
         let totalValue = 0;
         let selectedCollection = this.store.findOneBy(this.collection, (legoCollection) => legoCollection.id === id); //for this specific collection
-        selectedCollection.sets.forEach((set) => (totalValue += set.price)); //go thru sets and add up prices
+        selectedCollection.sets.forEach((set) => (totalValue += parseInt(set.price))); //go thru sets and add up prices
         return totalValue;
     },
 
-    addSet(id, set) {
-        this.store.addItem(this.collection, id, this.array, set);
+    async addSet(id, set, file, response) {
+        try {
+            set.picture = await this.store.addToCloudinary(file);
+            //this.store.addCollection(this.collection, set);
+            this.store.addItem(this.collection, id, this.array, set);
+            response();
+        } catch (error) {
+            logger.error("Error processing set:" + error);
+            response(error);
+        }
+        //this.store.addItem(this.collection, id, this.array, set);
     },
 
     async addCollection(legoCollection, file, response) {
