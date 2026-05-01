@@ -68,8 +68,16 @@ const legoStore = {
     response();
     },
 
-    editSet(id, setId, updatedSet) {
-        this.store.editItem(this.collection, id, setId, this.array, updatedSet);
+    async editSet(id, setId, updatedSet, file, response) {
+        //this.store.editItem(this.collection, id, setId, this.array, updatedSet);
+        try {
+            set.picture = await this.store.addToCloudinary(file);
+            this.store.editItem(this.collection, id, setId, this.array, updatedSet);
+            response();
+        } catch (error) {
+            logger.error("Error processing set:" + error);
+            response(error);
+        }
     },
 
     getUserCollections(userid) {

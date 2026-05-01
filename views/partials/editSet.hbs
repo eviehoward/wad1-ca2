@@ -26,7 +26,9 @@
             </span>
           </td>
           <td>
-            <img src="{{picture.url}}" class="ui small image">
+            <span class="ui input">
+              <input type="file" name="picture" required value="{{picture}}">
+            </span>
           </td>
           <td class="center aligned">
               <button type = "reset" class = "editSubmit" title="Exit without saving" id="hideEdit{{@index}}">
