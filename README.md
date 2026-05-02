@@ -1,8 +1,8 @@
 # Assignment 2 Lego Collection App
 
 This App is used to record and display Lego collections.
-
-The collections are organised by Lego theme, with an additional Wishlist collection.
+The collections are organised by Lego theme.
+Users can login and manage their own collection.
 
 Each collection stores:
 - an ID,
@@ -14,7 +14,12 @@ For each set, the following data is recorded:
 - the set code,
 - name,
 - number of pieces,
-- RRP (in euro).
+- RRP (in euro),
+- an image.
 
-25/04/26 - Added user store, login/signup functionality, updated menu, added user stats to stats.hbs
-29/04/26 - Added update set functionality, listOneSet and editSet partials, added sort by title and collection size, search, stats on homepage
+Collections/sets can be added, deleted, and edited.
+Statistics about the global collection and user's collection can be viewed on the Statistics page.
+
+You can login to two test accounts:
+email: homer@simpson.com / password: Secret1
+email: marge@simpson.com / password: Secret1

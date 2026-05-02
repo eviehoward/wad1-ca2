@@ -53,19 +53,19 @@ const legoStore = {
     },
 
     async removeCollection(id, response) {
-    const legoCollection = this.getLegoCollection(id);
+        const legoCollection = this.getLegoCollection(id);
 
-    if (legoCollection.image && legoCollection.image.public_id) {
-        try {
-            await this.store.deleteFromCloudinary(legoCollection.image.public_id);
-            logger.info("Cloudinary image deleted");
-        } catch (err) {
-            logger.error("Failed to delete Cloudinary image:", err);
+        if (legoCollection.image && legoCollection.image.public_id) {
+            try {
+                await this.store.deleteFromCloudinary(legoCollection.image.public_id);
+                logger.info("Cloudinary image deleted");
+            } catch (err) {
+                logger.error("Failed to delete Cloudinary image:", err);
+            }
         }
-    }
 
-    this.store.removeCollection(this.collection, legoCollection);
-    response();
+        this.store.removeCollection(this.collection, legoCollection);
+        response();
     },
 
     async editSet(id, setId, updatedSet, file, response) {
