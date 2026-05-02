@@ -3,7 +3,9 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,7 +16,8 @@ body {
   background-size: cover;
 }
 
-.menu, a {
+.menu,
+a {
   color: black;
   font-family: "Barriecito", system-ui;
   font-size: 1.4em;
@@ -29,11 +32,14 @@ a:hover {
   color: rgb(74, 0, 0);
 }
 
-.break, hr {
+.break,
+hr {
   margin-bottom: 70px;
 }
 
-h4, h3, h2 {
+h4,
+h3,
+h2 {
   font-family: "Barriecito", system-ui;
   font-size: 2em;
 }
@@ -67,14 +73,13 @@ main {
 }
 
 .editSubmit {
-  border:none;
+  border: none;
   background: none;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
-
 
 .dashboard-header {
   display: flex;
@@ -82,6 +87,3 @@ main {
   align-items: center;
   margin-bottom: 1.5em;
 }
-
-
-

@@ -1,42 +1,67 @@
-<form 
-          class = "ui stacked segment form" 
-          action="/legoCollection/{{collectionId}}/updateset/{{id}}" 
-          method="POST"
-          enctype="multipart/form-data"
-        >
-        <tr class="hide" id="edit{{@index}}">
-          <td>
-            <span class="ui input">
-              <input type="text" name="code" pattern="\d{5}" autofocus required title="Please include a valid set code" placeholder="12345" value="{{code}}">
-            </span>
-          </td>
-          <td>
-            <span class="ui input">
-              <input type="text" name="name" required title="Please include a valid name" placeholder="Title" value="{{name}}">
-            </span>
-          </td>
-          <td>
-            <span class="ui input">
-              <input type="number" name="pieces" required title="Please include a valid number of pieces" placeholder="0" value="{{pieces}}">
-            </span>
-          </td>
-          <td>
-            <span class="ui input">
-              <input type="text" name="price" required title="Please include a valid price" placeholder="0.00" value="{{price}}">
-            </span>
-          </td>
-          <td>
-            <span class="ui input">
-              <input type="file" name="picture" required value="{{picture}}">
-            </span>
-          </td>
-          <td class="center aligned">
-              <button type = "reset" class = "editSubmit" title="Exit without saving" id="hideEdit{{@index}}">
-                <i class="ui undo icon "></i>
-              </button>
-          </td>
-          <td class="center aligned">
-              <button type="submit" class="editSubmit" title="Save changes"><i class="ui save icon"></button>
-          </td>
-          </tr>
-          </form>
+<form
+  class="ui stacked segment form"
+  action="/legoCollection/{{collectionId}}/updateset/{{id}}"
+  method="POST"
+  enctype="multipart/form-data">
+  <tr class="hide" id="edit{{@index}}">
+    <td>
+      <span class="ui input">
+        <input
+          type="text"
+          name="code"
+          pattern="\d{5}"
+          autofocus
+          required
+          title="Please include a valid set code"
+          placeholder="12345"
+          value="{{code}}" />
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input
+          type="text"
+          name="name"
+          required
+          title="Please include a valid name"
+          placeholder="Title"
+          value="{{name}}" />
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input
+          type="number"
+          name="pieces"
+          required
+          title="Please include a valid number of pieces"
+          placeholder="0"
+          value="{{pieces}}" />
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input
+          type="text"
+          name="price"
+          required
+          title="Please include a valid price"
+          placeholder="0.00"
+          value="{{price}}" />
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input type="file" name="picture" required value="{{picture}}" />
+      </span>
+    </td>
+    <td class="center aligned">
+      <button type="reset" class="editSubmit" title="Exit without saving" id="hideEdit{{@index}}">
+        <i class="ui undo icon"></i>
+      </button>
+    </td>
+    <td class="center aligned">
+      <button type="submit" class="editSubmit" title="Save changes"><i class="ui save icon"></i></button>
+    </td>
+  </tr>
+</form>

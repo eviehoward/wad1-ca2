@@ -1,30 +1,24 @@
-'use strict';
+"use strict";
 
-import express from 'express';
+import express from "express";
 import routes from "./routes.js";
 import logger from "./utils/logger.js";
-import { create } from 'express-handlebars';
+import { create } from "express-handlebars";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
-
-
-
 
 const app = express();
 const port = 3000;
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: false, }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(fileUpload({useTempFiles: true}));
-
-
-
+app.use(fileUpload({ useTempFiles: true }));
 
 const handlebars = create({
-    extname: '.hbs', 
-    helpers: {
+  extname: ".hbs",
+  helpers: {
     upperCase: (inputString) => {
       return inputString.toUpperCase();
     },
@@ -41,20 +35,20 @@ const handlebars = create({
     },
 
     properCase: (str) => {
-        const splitted = str.split(" ");
-        const output = [];
+      const splitted = str.split(" ");
+      const output = [];
 
-        splitted.map((word) => {
-            output.push(word[0].toUpperCase() + word.slice(1).toLowerCase());
-        });
+      splitted.map((word) => {
+        output.push(word[0].toUpperCase() + word.slice(1).toLowerCase());
+      });
 
-        return output.join(" ");
+      return output.join(" ");
     },
 
     countNormal: (index) => {
-      return index += 1;
+      return (index += 1);
     }
-    }
+  }
 });
 
 app.engine(".hbs", handlebars.engine);

@@ -5,7 +5,63 @@
       "id": "60553d3d-ec2a-4ef4-83b2-984915e69d57",
       "title": "Ideas",
       "date": "2026-04-30T20:25:59.922Z",
-      "sets": [],
+      "sets": [
+        {
+          "id": "fd43f24d-2dcb-4db3-a837-48685cc9134e",
+          "name": "Home Alone",
+          "code": "21330",
+          "pieces": "3955",
+          "price": "299.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728108/mhgmgkiaymkqfyvyqn0a.png",
+            "public_id": "mhgmgkiaymkqfyvyqn0a"
+          }
+        },
+        {
+          "id": "5f2ca0eb-024b-449a-8671-b3ab5e8a6ba9",
+          "name": "Snoopy's doghouse",
+          "code": "21368",
+          "pieces": "964",
+          "price": "79.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728361/cbd7toipcmegqhylnpmc.png",
+            "public_id": "cbd7toipcmegqhylnpmc"
+          }
+        },
+        {
+          "id": "e69a4c6b-f1d8-4d23-9f60-83a941679605",
+          "name": "italian riviera",
+          "code": "21359",
+          "pieces": "3251",
+          "price": "279.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728437/geelmofjjrzluxg2jr6v.png",
+            "public_id": "geelmofjjrzluxg2jr6v"
+          }
+        },
+        {
+          "id": "8a7e6349-8cb1-44e3-848f-5268f7246ea6",
+          "name": "The Starry night",
+          "code": "21333",
+          "pieces": "2316",
+          "price": "169.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728519/wxq01btpg6gk1urbplrz.png",
+            "public_id": "wxq01btpg6gk1urbplrz"
+          }
+        },
+        {
+          "id": "bb4f1b63-f1ef-4e59-b48b-42bf82bc8cb0",
+          "name": "Orange cat",
+          "code": "21376",
+          "pieces": "1755",
+          "price": "99.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728565/d3nmnyyjh8bhtzrnzh3v.png",
+            "public_id": "d3nmnyyjh8bhtzrnzh3v"
+          }
+        }
+      ],
       "image": {
         "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580759/yjsdjwpwkxtmpv1utfy1.png",
         "public_id": "yjsdjwpwkxtmpv1utfy1"
@@ -16,7 +72,52 @@
       "id": "db508fbf-6139-474f-8fa3-789465f953c8",
       "title": "City",
       "date": "2026-04-30T20:26:13.219Z",
-      "sets": [],
+      "sets": [
+        {
+          "id": "3d86b969-a1a5-4a8a-98d5-a306c452d15e",
+          "name": "Fries food truck",
+          "code": "60488",
+          "pieces": "216",
+          "price": "19.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728616/e5olliffzdbs52or1mfg.png",
+            "public_id": "e5olliffzdbs52or1mfg"
+          }
+        },
+        {
+          "id": "24bb72fe-488f-40f4-b626-8a4f86fd2384",
+          "name": "Fire station",
+          "code": "60414",
+          "pieces": "843",
+          "price": "79.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728663/eau4qkngwl4yggaobam5.png",
+            "public_id": "eau4qkngwl4yggaobam5"
+          }
+        },
+        {
+          "id": "b399db11-25dd-4b98-a437-ff78674effca",
+          "name": "Police prison ISLAND",
+          "code": "60419",
+          "pieces": "980",
+          "price": "99.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728700/gy10cmbxkdkthakaxvlk.png",
+            "public_id": "gy10cmbxkdkthakaxvlk"
+          }
+        },
+        {
+          "id": "ee2f3e4e-d952-4556-9d53-d6209c4b37ca",
+          "name": "central train station",
+          "code": "60469",
+          "pieces": "752",
+          "price": "89.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728745/bsyprnr9w13ysd8jmi6s.png",
+            "public_id": "bsyprnr9w13ysd8jmi6s"
+          }
+        }
+      ],
       "image": {
         "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580773/uugipdgemzirk5gbo6wy.png",
         "public_id": "uugipdgemzirk5gbo6wy"
@@ -27,7 +128,30 @@
       "id": "0852ba65-dd08-4b13-9fc0-080f35bfbd15",
       "title": "Icons",
       "date": "2026-04-30T20:26:28.022Z",
-      "sets": [],
+      "sets": [
+        {
+          "id": "7787c892-7b11-41c3-b41f-93e05d250fbf",
+          "name": "Rivendell",
+          "code": "10316",
+          "pieces": "6167",
+          "price": "499.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728804/bsfmywptlcqmfwgcyi94.png",
+            "public_id": "bsfmywptlcqmfwgcyi94"
+          }
+        },
+        {
+          "id": "0e004501-a5b4-4cb6-a465-7c847476a860",
+          "name": "tudor corner",
+          "code": "10350",
+          "pieces": "3266",
+          "price": "229.99",
+          "picture": {
+            "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777728847/cyxwrspnbqpijc89pgla.png",
+            "public_id": "cyxwrspnbqpijc89pgla"
+          }
+        }
+      ],
       "image": {
         "url": "http://res.cloudinary.com/dzafc16rc/image/upload/v1777580787/bykfflflf41iokp80ber.png",
         "public_id": "bykfflflf41iokp80ber"

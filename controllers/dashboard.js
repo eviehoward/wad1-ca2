@@ -1,11 +1,9 @@
-'use strict';
+"use strict";
 
 import logger from "../utils/logger.js";
-import legoStore from '../models/lego-store.js';
-import { v4 as uuidv4 } from 'uuid';
-import accounts from './accounts.js';
-
-
+import legoStore from "../models/lego-store.js";
+import { v4 as uuidv4 } from "uuid";
+import accounts from "./accounts.js";
 
 const dashboard = {
   createView(request, response) {
@@ -29,15 +27,15 @@ const dashboard = {
         sorted = collections.slice().sort((a, b) => {
           if (sortField === "title") {
             return a.title.localeCompare(b.title) * order;
-          };
+          }
 
           if (sortField === "size") {
             return (a.sets.length - b.sets.length) * order;
           }
 
-          return 0
+          return 0;
         });
-      };
+      }
 
       const viewData = {
         title: "Lego Collection Dashboard",
@@ -48,14 +46,13 @@ const dashboard = {
         titleSelected: request.query.sort === "title",
         sizeSelected: request.query.sort === "size",
         ascSelected: request.query.order === "asc",
-        descSelected: request.query.order === "desc",
+        descSelected: request.query.order === "desc"
       };
 
-      logger.info('about to render' + viewData.legoCollections);
+      logger.info("about to render" + viewData.legoCollections);
 
-      response.render('dashboard', viewData);
-    } 
-    else response.redirect('/');
+      response.render("dashboard", viewData);
+    } else response.redirect("/");
   },
 
   addCollection(request, response) {
@@ -72,7 +69,7 @@ const dashboard = {
       image: ""
     };
 
-    legoStore.addCollection(newCollection, request.files.image, function() {
+    legoStore.addCollection(newCollection, request.files.image, function () {
       response.redirect("/dashboard");
     });
   },
@@ -81,13 +78,10 @@ const dashboard = {
     const collectionId = request.params.id;
     logger.debug(`Deleting Playlist ${collectionId}`);
 
-    legoStore.removeCollection(collectionId, function() {
+    legoStore.removeCollection(collectionId, function () {
       response.redirect("/dashboard");
-    })
-  },
-
-
+    });
+  }
 };
 
 export default dashboard;
-

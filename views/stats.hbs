@@ -1,184 +1,160 @@
 {{> menu id="stats"}}
 
-<hr/>
+<hr />
 
 <section class="ui center aligned middle aligned segment">
-
   <h2>Lego Collection App Statistics</h2>
 
-  <h3 class="ui header">
-    Global Statistics
-  </h3>
-  <p>
-    The Lego Collection App now contains: 
-  </p>
+  <h3 class="ui header">Global Statistics</h3>
+  <p>The Lego Collection App now contains:</p>
   {{#with stats}}
-   <div class="ui center aligned grid">
-    
-    <div class = "ui sixteen wide column">
+  <div class="ui center aligned grid">
+    <div class="ui sixteen wide column">
+          <div class="ui four statistics">
+                                <div class="ui red statistic">
+                                  <div class="value">
+                                    <i class="folder icon"></i>
+                                  </div>
+                                  <div class="label">{{displayNumCollections}} collections</div>
+                                </div>
+
+                                      <div class="ui orange statistic">
+                                        <div class="value">
+                                          <i class="gifts icon"></i>
+                                        </div>
+                                        <div class="label">{{displayNumSets}} sets</div>
+                                      </div>
+                                        <div class="ui yellow statistic">
+                                          <div class="value">
+                                            <i class="balance scale icon"></i>
+                                          </div>
+                                          <div class="label">
+                                            Average sets per <br />
+                                            collection: {{displayAverage}}
+                                          </div>
+                                        </div>
+
+                                            <div class="ui olive statistic">
+                                              <div class="value">
+                                                <i class="hippo icon"></i>
+                                              </div>
+                                              <div class="label">
+                                                Biggest collection: {{displayLongest}} sets
+                                                <table class="ui very basic center aligned compact table">
+                                                  {{#each displayLongestTitles}}
+                                                  <tr>
+                                                    <td>{{this}}</td>
+                                                  </tr>
+                                                  {{/each}}
+                                                </table>
+                                              </div>
+                                            </div>
+</div>
+<div class="ui three statistics">
+                <div class="ui green statistic">
+                  <div class="value">
+                    <i class="feather icon"></i>
+                  </div>
+                  <div class="label">
+                    Smallest collection: {{displayShortest}} sets
+                    <table class="ui very basic center aligned compact table">
+                      {{#each displayShortestTitles}}
+                      <tr>
+                        <td>{{this}}</td>
+                      </tr>
+                      {{/each}}
+                    </table>
+                  </div>
+                </div>
+
       
-        <div class="ui centered three statistics">
-          <div class="ui statistic">
-            <div class="value">
-              <i class="microphone icon"></i> 
-            </div>
-            <div class="label">
-              {{displayNumCollections}} collections
-            </div>
-          </div>
+                  <div class="ui teal statistic">
+                    <div class="value">
+                      <i class="ui users icon"></i>
+                    </div>
+                    <div class="label">Total users: {{displayTotalUsers}} users</div>
+                  </div>
 
-          <div class="ui red statistic">
-            <div class="value">
-              <i class="music icon"></i> 
-            </div>
-            <div class="label">
-              {{displayNumSets}} sets
-            </div>
-          </div> 
-		  
-          <div class="ui blue statistic">
-            <div class="value">
-              <i class="balance scale icon"></i> 
-            </div>
-            <div class="label">
-              Average sets per <br> collection: {{displayAverage}}
-            </div>
-          </div>     
-
-		  <div class="ui purple statistic">
-          <div class="value">
-            <i class="plus icon"></i>
-          </div>
-          <div class="label">
-            Biggest collection: {{displayLongest}} sets
-            <table>
-              {{#each displayLongestTitles}}
-              <tr>
-                <td>{{this}}</td>
-              </tr>
-              {{/each}}
-            </table>
-          </div>
+                  <div class="ui blue statistic">
+                    <div class="value">
+                      <i class="piggy bank icon"></i>
+                    </div>
+                    <div class="label">Total value: &euro;{{displayTotalValue}}</div>
+                  </div>
         </div>
-
-        <div class="ui purple statistic">
-          <div class="value">
-            <i class="plus icon"></i>
-          </div>
-          <div class="label">
-            Smallest collection: {{displayShortest}} sets
-            <table>
-              {{#each displayShortestTitles}}
-              <tr>
-                <td>{{this}}</td>
-              </tr>
-              {{/each}}
-            </table>
-          </div>
-        </div>
-
-        <div class="ui purple statistic">
-          <div class="value">
-            <i class="plus icon"></i>
-          </div>
-          <div class="label">
-            Total users: {{displayTotalUsers}} users
-          </div>
-        </div>
-        <div class="ui purple statistic">
-          <div class="value">
-            <i class="plus icon"></i>
-          </div>
-          <div class="label">
-            Total value: &euro;{{displayTotalValue}} 
-          </div>
-        </div>
-
-
-        </div> 
-    </div>
-   </div>   
-   
-  {{/with}}
-  {{#with userStats}}
-  <h3 class="ui header">
-    Your Statistics
-  </h3>
-  <div class = "ui sixteen wide column">
       
-        <div class="ui centered three statistics">
-          <div class="ui statistic">
-            <div class="value">
-              <i class="microphone icon"></i> 
-            </div>
-            <div class="label">
-              {{displayNumCollections}} collections
-            </div>
-          </div>
-
-          <div class="ui red statistic">
-            <div class="value">
-              <i class="music icon"></i> 
-            </div>
-            <div class="label">
-              {{displayNumSets}} sets
-            </div>
-          </div> 
-		  
-          <div class="ui blue statistic">
-            <div class="value">
-              <i class="balance scale icon"></i> 
-            </div>
-            <div class="label">
-              Average sets per <br> collection: {{displayAverage}}
-            </div>
-          </div>     
-
-		  <div class="ui purple statistic">
-          <div class="value">
-            <i class="plus icon"></i>
-          </div>
-          <div class="label">
-            Biggest collection: {{displayLongest}} sets
-            <table>
-              {{#each displayLongestTitles}}
-              <tr>
-                <td>{{this}}</td>
-              </tr>
-              {{/each}}
-            </table>
-          </div>
-        </div>
-
-        <div class="ui purple statistic">
-          <div class="value">
-            <i class="plus icon"></i>
-          </div>
-          <div class="label">
-            Smallest collection: {{displayShortest}} sets
-            <table>
-              {{#each displayShortestTitles}}
-              <tr>
-                <td>{{this}}</td>
-              </tr>
-              {{/each}}
-            </table>
-          </div>
-        </div>
-
-        <div class="ui purple statistic">
-          <div class="value">
-            <i class="plus icon"></i>
-          </div>
-          <div class="label">
-            Total value: &euro;{{displayTotalValue}} 
-          </div>
-        </div>
-
-
-        </div> 
+      
     </div>
-   </div>   
+  </div>
+
+  {{/with}} {{#with userStats}}
+  <h3 class="ui header">Your Statistics</h3>
+  <div class="ui sixteen wide column">
+    <div class="ui centered three statistics">
+      <div class="ui violet statistic">
+        <div class="value">
+          <i class="folder icon"></i>
+        </div>
+        <div class="label">{{displayNumCollections}} collections</div>
+      </div>
+
+      <div class="ui purple statistic">
+        <div class="value">
+          <i class="gifts icon"></i>
+        </div>
+        <div class="label">{{displayNumSets}} sets</div>
+      </div>
+
+      <div class="ui pink statistic">
+        <div class="value">
+          <i class="balance scale icon"></i>
+        </div>
+        <div class="label">
+          Average sets per <br />
+          collection: {{displayAverage}}
+        </div>
+      </div>
+
+      <div class="ui red statistic">
+        <div class="value">
+          <i class="hippo icon"></i>
+        </div>
+        <div class="label">
+          Biggest collection: {{displayLongest}} sets
+          <table class="ui very basic center aligned compact table">
+            {{#each displayLongestTitles}}
+            <tr>
+              <td>{{this}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+      </div>
+
+      <div class="ui orange statistic">
+        <div class="value">
+          <i class="feather icon"></i>
+        </div>
+        <div class="label">
+          Smallest collection: {{displayShortest}} sets
+          <table class="ui very basic center aligned compact table">
+            {{#each displayShortestTitles}}
+            <tr>
+              <td>{{this}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+      </div>
+
+      <div class="ui yellow statistic">
+        <div class="value">
+          <i class="piggy bank icon"></i>
+        </div>
+        <div class="label">Total value: &euro;{{displayTotalValue}}</div>
+      </div>
+    </div>
+  </div>
 
   {{/with}}
 </section>

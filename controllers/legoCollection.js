@@ -1,27 +1,25 @@
-'use strict';
+"use strict";
 
-import logger from '../utils/logger.js';
-import legoStore from '../models/lego-store.js';
-import { v4 as uuidv4 } from 'uuid';
-import accounts from './accounts.js';
-
-
+import logger from "../utils/logger.js";
+import legoStore from "../models/lego-store.js";
+import { v4 as uuidv4 } from "uuid";
+import accounts from "./accounts.js";
 
 const legoCollection = {
   createView(request, response) {
     const legoCollectionId = request.params.id;
     const loggedInUser = accounts.getCurrentUser(request);
     logger.debug(`Lego Collection id = ${legoCollectionId}`);
-    
+
     const viewData = {
-      title: 'Lego Collection', //top of tab
+      title: "Lego Collection", //top of tab
       thisLegoCollection: legoStore.getLegoCollection(legoCollectionId), //finds this specific lego collection and stores it
       thisLegoCollectionValue: legoStore.getLegoPrice(legoCollectionId), //adds up all the costs of each set in this lego collection
-      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-      picture: loggedInUser.picture,
+      fullname: loggedInUser.firstName + " " + loggedInUser.lastName,
+      picture: loggedInUser.picture
     };
 
-    response.render('legoCollection', viewData);
+    response.render("legoCollection", viewData);
   },
 
   addSet(request, response) {
@@ -35,8 +33,8 @@ const legoCollection = {
       price: request.body.price
     };
 
-    legoStore.addSet(legoCollectionId, newSet, request.files.picture, function() {
-      response.redirect('/legoCollection/' + legoCollectionId);
+    legoStore.addSet(legoCollectionId, newSet, request.files.picture, function () {
+      response.redirect("/legoCollection/" + legoCollectionId);
     });
   },
 
@@ -45,7 +43,7 @@ const legoCollection = {
     const setId = request.params.setid;
     logger.debug(`Deleting Set  $(setId} from Collection ${legoCollectionId}`);
     legoStore.removeSet(legoCollectionId, setId);
-    response.redirect('/legoCollection/' + legoCollectionId);
+    response.redirect("/legoCollection/" + legoCollectionId);
   },
 
   updateSet(request, response) {
@@ -57,17 +55,15 @@ const legoCollection = {
       name: request.body.name,
       code: request.body.code,
       pieces: request.body.pieces,
-      price: request.body.price,
+      price: request.body.price
     };
     // legoStore.editSet(collectionId, setId, updatedSet);
     // response.redirect('/legoCollection/' + collectionId);
 
-    legoStore.editSet(collectionId, setId, updatedSet, request.files.picture, function() {
-      response.redirect('/legoCollection/' + collectionId);
+    legoStore.editSet(collectionId, setId, updatedSet, request.files.picture, function () {
+      response.redirect("/legoCollection/" + collectionId);
     });
   }
-
-
 };
 
 export default legoCollection;

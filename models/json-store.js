@@ -1,22 +1,20 @@
-'use strict';
+"use strict";
 
 import { Low } from "lowdb";
 import { JSONFile } from "lowdb/node";
 import dotenv from "dotenv";
 
-import logger from '../utils/logger.js';
+import logger from "../utils/logger.js";
 import { v2 as cloudinary } from "cloudinary";
 import fs from "fs/promises";
-
 
 dotenv.config({ quiet: true });
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
+  api_secret: process.env.CLOUDINARY_API_SECRET
 });
-
 
 class JsonStore {
   constructor(file, defaults) {
@@ -82,7 +80,7 @@ class JsonStore {
     await this.db.write();
   }
 
-    async addToCloudinary(file) {
+  async addToCloudinary(file) {
     const result = await cloudinary.uploader.upload(file.tempFilePath);
     logger.info("Cloudinary result:", result);
 
@@ -95,11 +93,11 @@ class JsonStore {
 
     return {
       url: result.url,
-      public_id: result.public_id,
+      public_id: result.public_id
     };
   }
 
-    async deleteFromCloudinary(publicId) {
+  async deleteFromCloudinary(publicId) {
     return new Promise((resolve, reject) => {
       cloudinary.uploader.destroy(publicId, (result, err) => {
         if (err) {
@@ -110,9 +108,6 @@ class JsonStore {
       });
     });
   }
-
-
 }
 
 export default JsonStore;
-

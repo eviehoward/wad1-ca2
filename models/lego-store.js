@@ -45,11 +45,11 @@ const legoStore = {
             logger.error("Error processing playlist:", error);
             response(error);
         }
-    //this.store.addCollection(this.collection, legoCollection);
+        //this.store.addCollection(this.collection, legoCollection);
     },
 
     removeSet(id, setId) {
-    this.store.removeItem(this.collection, id, this.array, setId);
+        this.store.removeItem(this.collection, id, this.array, setId);
     },
 
     async removeCollection(id, response) {
@@ -81,18 +81,16 @@ const legoStore = {
     },
 
     getUserCollections(userid) {
-    return this.store.findBy(this.collection, (legoCollection => legoCollection.userid === userid));
+        return this.store.findBy(this.collection, (legoCollection) => legoCollection.userid === userid);
     },
 
     searchUserCollections(search, userid) {
         return this.store.findBy(
-        this.collection,
-    (legoCollection => legoCollection.userid === userid && legoCollection.title.toLowerCase().includes(search.toLowerCase())))
-    }, 
-
+            this.collection,
+            (legoCollection) =>
+                legoCollection.userid === userid && legoCollection.title.toLowerCase().includes(search.toLowerCase())
+        );
+    }
 };
-
-
-
 
 export default legoStore;
