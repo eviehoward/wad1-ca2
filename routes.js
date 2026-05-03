@@ -24,6 +24,7 @@ router.post("/legoCollection/:id/addSet", legoCollection.addSet);
 router.post("/dashboard/addCollection", dashboard.addCollection);
 router.post("/legoCollection/:id/updateSet/:setId", legoCollection.updateSet);
 
+
 router.get("/searchCategory", dashboard.createView);
 router.get("/sortData", dashboard.createView);
 
@@ -33,5 +34,7 @@ router.get("/signup", accounts.signup);
 router.get("/logout", accounts.logout);
 router.post("/register", accounts.register);
 router.post("/authenticate", accounts.authenticate);
+
+router.post('/about/addcomment', about.addComment);
 
 export default router;

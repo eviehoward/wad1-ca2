@@ -36,6 +36,8 @@ const legoStore = {
         //this.store.addItem(this.collection, id, this.array, set);
     },
 
+
+
     async addCollection(legoCollection, file, response) {
         try {
             legoCollection.image = await this.store.addToCloudinary(file);
@@ -90,7 +92,7 @@ const legoStore = {
             (legoCollection) =>
                 legoCollection.userid === userid && legoCollection.title.toLowerCase().includes(search.toLowerCase())
         );
-    }
+    },
 };
 
 export default legoStore;

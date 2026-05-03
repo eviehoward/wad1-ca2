@@ -57,8 +57,6 @@ const legoCollection = {
       pieces: request.body.pieces,
       price: request.body.price
     };
-    // legoStore.editSet(collectionId, setId, updatedSet);
-    // response.redirect('/legoCollection/' + collectionId);
 
     legoStore.editSet(collectionId, setId, updatedSet, request.files.picture, function () {
       response.redirect("/legoCollection/" + collectionId);

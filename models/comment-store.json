@@ -1,0 +1,25 @@
+{
+  "comments": [
+    {
+      "fullname": "Marge simpson",
+      "userid": "1082b8d0-c37c-4e6b-bbcc-494d1c0b3200",
+      "id": "87de5484-dae5-4e0f-8685-0f0e21ef645d",
+      "content": "test",
+      "timestamp": "2026-05-03T16:56:38.356Z"
+    },
+    {
+      "fullname": "Homer Simpson",
+      "userid": "1bc00e83-2c62-41de-973b-c9874ec10034",
+      "id": "71b2d296-4130-4c04-95ef-486bbda3b050",
+      "content": "I am using the lego collection app!",
+      "timestamp": "2026-05-03T16:59:39.846Z"
+    },
+    {
+      "fullname": "evie h",
+      "userid": "6e9b0570-8bdb-4084-9edd-758914203c71",
+      "id": "e1ccc2c8-86f3-429d-85b4-25c3377193a6",
+      "content": "Adding a comment",
+      "timestamp": "2026-05-03T17:00:01.297Z"
+    }
+  ]
+}

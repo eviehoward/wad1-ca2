@@ -1,0 +1,15 @@
+<section class="ui left aligned middle aligned segment">
+    <h3>Comments</h3>
+    {{#each comments}} 
+    <section class="ui segment">
+        {{#if fullname}}
+        <h4>{{properCase fullname}}</h4>
+        {{/if}}
+        <p>{{content}}</p>
+        {{#if timestamp}}
+        <span class="commentTime"><em>Posted on {{formatDate timestamp}}</em></span>
+        {{/if}}
+    </section>
+    {{/each}}
+
+</section>

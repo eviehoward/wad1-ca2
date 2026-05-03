@@ -19,7 +19,7 @@ For each set, the following data is recorded:
 -   an image.
 
 Collections/sets can be added, deleted, and edited. Statistics about the global collection and user's collection can be
-viewed on the Statistics page.
+viewed on the Statistics page. There is also a comments feed and ability to add a comment on the About page.
 
 You can login to two test accounts:
 

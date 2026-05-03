@@ -28,7 +28,8 @@ const userStore = {
       logger.error("Error processing playlist:", error);
       response(error);
     }
-  }
+  },
+
 };
 
 export default userStore;
